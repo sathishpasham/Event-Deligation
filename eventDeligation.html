@@ -6,28 +6,34 @@
     <title>Event Deligation</title>
   </head>
   <body>
-    <div>
+    <div id="catagories">
       <li id="headphones">Headphones</li>
       <li id="laptops">Laptops</li>
       <li id="furniture">Furniture</li>
       <li id="television">Television</li>
       <script>
-        let headphones = document.getElementById("headphones");
-        let laptops=document.getElementById("laptops");
-        let furniture=document.getElementById("furniture");
-        let television=document.getElementById("television");
-        headphones.addEventListener('click',(e)=>{
-            console.log('headphones clicked')
+        // let headphones = document.getElementById("headphones");
+        // let laptops=document.getElementById("laptops");
+        // let furniture=document.getElementById("furniture");
+        // let television=document.getElementById("television");
+        // headphones.addEventListener('click',(e)=>{
+        //     console.log('headphones clicked')
+        // })
+        // laptops.addEventListener('click',(e)=>{
+        //     console.log('Laptops is clicked')
+        // })
+        // furniture.addEventListener('click',(e)=>{
+        //     console.log('Furniture is clicked')
+        // })
+        // television.addEventListener('click',(e)=>{
+        //     console.log('Television is clicked')
+        // })
+
+        let catagories=document.getElementById('catagories');
+        catagories.addEventListener('click',(e)=>{
+            console.log(e.target);
         })
-        laptops.addEventListener('click',(e)=>{
-            console.log('Laptops is clicked')
-        })
-        furniture.addEventListener('click',(e)=>{
-            console.log('Furniture is clicked')
-        })
-        television.addEventListener('click',(e)=>{
-            console.log('Television is clicked')
-        })
+
       </script>
     </div>
   </body>
